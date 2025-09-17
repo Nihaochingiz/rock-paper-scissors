@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, Ножницы, Бумага</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Камень, Ножницы, Бумага</h1>
+        
+        <div class="score-board">
+            <div class="score">
+                <span>Вы: </span>
+                <span id="user-score">0</span>
+            </div>
+            <div class="score">
+                <span>Компьютер: </span>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button class="choice" data-choice="rock">✊</button>
+            <button class="choice" data-choice="paper">✋</button>
+            <button class="choice" data-choice="scissors">✌️</button>
+        </div>
+
+        <div class="result">
+            <p id="result-text">Сделайте свой выбор!</p>
+            <p id="choices-text"></p>
+        </div>
+
+        <button id="reset-btn">Сбросить счет</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
